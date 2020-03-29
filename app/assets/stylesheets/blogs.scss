@@ -1,3 +1,27 @@
-// Place all the styles related to the blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.blog_title{
+  display: block;
+  padding: 10px;
+}
+
+.blog_title > input[type="text"]{
+  display: block;
+  width: 300px;
+}
+
+.blog_content{
+  padding: 10px;
+}
+
+.blog_content > textarea{
+  display: block;
+  resize: none;
+  width: 300px;
+  height: 60px;
+}
+
+.blog_submit{
+  padding: 10px;
+}
+.blog_submit > input[type="submit"]{
+  width: 70px;
+}

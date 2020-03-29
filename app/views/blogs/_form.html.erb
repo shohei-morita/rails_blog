@@ -10,14 +10,16 @@
     </div>
   <% end %>
   <div class="blog_title">
-    <br><%= form.label :title %></br>
+    <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
   <div class="blog_content">
-    <br><%= form.label :content %></br>
+    <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
-  <%= form.submit %>
+  <div class="blog_submit">
+    <%= form.submit '投稿する'%>
+  </div>
 <% end %>
 
-<br><%= link_to 'ブログ一覧画面へ！', blogs_path %></br>
+<%= link_to 'ブログ一覧画面へ！', blogs_path %>

@@ -1,6 +1,6 @@
 class Blog < ApplicationRecord
-  validates :title, presence: true
-  validates :title, length: {in:1..140}
-  validates :content, presence: true
-  validates :content, length: {in:1..140}
+  with_options presence: true, length: {in:1..140} do
+    validates :title
+    validates :content
+  end
 end
